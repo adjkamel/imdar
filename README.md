@@ -162,9 +162,7 @@ python train.py -d ucla -desc all -gpu 0
 
 ## Testing
 
-1.After generating the descriptors like described above, to test the individual models with the fusion model together by applying the Voting and Priority Score Selection algorithm (VPSS), use the pretrained models for a specific dataset, for a specific protocole,  of each descriptor and the fusion models, which are provided in the directory: './data/checkpoints/'
-
-Move the pretrained models to ./checkponits/ directory and run: 
+1.After generating the descriptors like described above, to test the individual models with the fusion model together by applying the Voting and Priority Score Selection algorithm (VPSS), use the pretrained models for a specific dataset, for a specific protocole,  of each descriptor and the fusion models, which are provided in the directory: Move the provided pretrained [models]([https://](https://drive.google.com/drive/folders/1AwhMdcxk3TSrlgO0ZiNbj3yOOwte6ncl?usp=drive_link) to ./checkponits/ directory and run: 
 
 
 ```
