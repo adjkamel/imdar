@@ -37,7 +37,7 @@ Protocol: csub / cview / csetup
 
 
 
-```console
+```
 - data/
   -ntu/
     - txt60skel/
@@ -101,7 +101,7 @@ Generate the descriptors images (GD, JDD, ADD, LAD, FDD) from the .npy files for
 
 For  NTU RGB+60 dataset run:
 
-```console
+```
 python skels2desc_ntu.py -d ntu60 -p csub -dspath ./data/ntu/npy60skel/ -despth ./data/descriptors/ -a train
 python skels2desc_ntu.py -d ntu60 -p csub -dspath ./data/ntu/npy60skel/ -despth ./data/descriptors/ -a test
 python skels2desc_ntu.py -d ntu60 -p cview -dspath ./data/ntu/npy60skel/ -despth ./data/descriptors/ -a train
@@ -110,7 +110,7 @@ python skels2desc_ntu.py -d ntu60 -p cview -dspath ./data/ntu/npy60skel/ -despth
 
 For  NTU RGB+120 dataset run:
 
-```console
+```
 python skels2desc_ntu.py -d ntu120 -p csub -dspath ./data/npy120skel/ -despth ./data/descriptors/ -a train
 python skels2desc_ntu.py -d ntu120 -p csub -dspath ./data/npy120skel/ -despth ./data/descriptors/ -a test
 python skels2desc_ntu.py -d ntu120 -p csetup -dspath ./data/npy120skel/ -despth ./data/descriptors/ -a train
@@ -118,7 +118,7 @@ python skels2desc_ntu.py -d ntu120 -p csetup -dspath ./data/npy120skel/ -despth 
 ```
 
 For the NW-UCL, no need to specify the protocol.
-```console
+```
 python skels2desc_ucla.py -d ucla  -dspath ./data/ucla/ -despth ./data/descriptors/ -a train
 python skels2desc_ucla.py -d ucla -dspath  ./data/ucla/ -despth ./data/descriptors/ -a test
 ```
@@ -150,7 +150,7 @@ The resulting checkpoints models can be found in ./checkpoints/ with the name su
 
 2. For a specific dataset with a specific evaluation protocol, train its fusion model using all the descriptor together by running:
 
-```console
+```
 python train.py -d ntu60 -p csub -desc all -gpu 0
 python train.py -d ntu60 -p cview -desc all -gpu 0
 
@@ -167,7 +167,7 @@ python train.py -d ucla -desc all -gpu 0
 Move the pretrained models to ./checkponits/ directory and run: 
 
 
-```console
+```
 python test.py -d ntu60 -p csub -desc all -gpu 0
 python test.py -d ntu60 -p cview -desc all -gpu 0
 
