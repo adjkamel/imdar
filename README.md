@@ -129,7 +129,7 @@ python skels2desc_ucla.py -d ucla -dspath  ./data/ucla/ -despth ./data/descripto
 1. For a specific descriptor, of a specific dataset with a specific evaluation protocol, train its model using:
 
 
-```console
+```
 python train.py -d ntu60 -p csub -desc GD -gpu 0
 python train.py -d ntu60 -p csub -desc JDD -gpu 0
 ...
