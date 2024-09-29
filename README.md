@@ -74,7 +74,7 @@ Protocol: csub / cview / csetup
 ```
 
 Insude txt2npy.py (file from [authors' GitHub repo](https://github.com/shahroudy/NTURGB-D?tab=readme-ov-file#samples-with-missing-skeletons)), change load_txt_path, save_npy_path, and missing_file_path as above directories, depending on the dataset (NTU RGB+60 or NTU RGB+120), then run:
-```console
+```
 python txt2npy.py 
 ```
 
@@ -84,7 +84,7 @@ Downlaod dataset from [here](https://www.dropbox.com/s/10pcm4pksjy6mkq/all_sqe.z
 
 For NW-UCLA descriptors' folder names will have the form of 'Dataset_Descripotor_TrainTest' without evaluation protocol since it has only the cross view protocol.
 
-```console
+```
  - data/
   -ucla/
   -descriptors/
