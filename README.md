@@ -1,5 +1,5 @@
-This repository contains code for the paper:  [Spatio-Temporal Invariant Descriptors for
-Skeleton-Based Human Action Recognition](https://) 
+This repository contains code for the paper:  [Spatio-temporal invariant descriptors for
+skeleton-Based human action recognition](https://) 
 
 ## Environment
 
